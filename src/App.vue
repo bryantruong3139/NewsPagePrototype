@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div>
-      <hr class="seperator">]
+      <hr class="seperator">
       <div class="page-header text-center">
         <h1>News Page Prototype</h1>
       </div>
@@ -11,74 +11,75 @@
       <div>
         <div class="boardz centered-block">
           <!--The number of ul's equates to the number of columns  -->
-          <ul> This will be the sidebar eventually</ul>
+          <ul>This will be the sidebar eventually</ul>
+          <!-- Column 1 -->
           <ul>
-            <app-news-card></app-news-card>
-            <app-news-card></app-news-card>
-            <app-news-card></app-news-card>
-            <app-news-card></app-news-card>
-            <li>
-              <h1>Constituam Adversarium</h1>*
-              Cu simul oratio indoctum nam, cu offendit moderatius mel. Sea eu euismod consulatu, usu cu
-              audiam perpetua, viris philosophia vis et. Cu sit tibique intellegam, error ludus scripta pri
-              et. His congue aliquam iracundia ei. Has idque fastidii id, mucius erroribus vel ad. Ut posse
-              albucius periculis his, duo an dicunt nostrud deleniti.
-              Modo affert expetenda per ne. Et dolore platonem appellantur cum. Constituam adversarium in sit,
-              mea ne porro vitae, eu pri modus dicam quaeque. At nibh brute sonet sea. Mei simul disputando
-              eu, id vis esse explicari dissentiet, ei agam volutpat usu. Ex vis tollit mollis oportere, mei
-              probatus qualisque te. Mei labore voluptaria ex, mei graeci feugiat definiebas eu.
-            </li>
-
-            <li>
-              <h1>Fastidii Electram</h1>Vel adipisci suscipiantur te, nam ullum perfecto ut. Vitae contentiones id sed. Est vitae
-              ponderum facilisis in. Quo illud eligendi similique et, odio detraxit pertinacia ea vix.
-            </li>
+            <app-news-card
+              :newsHeader="newsCard1.title"
+              :newsBody="newsCard1.description"
+              :blogURL="newsCard1.blogPostURL"
+            ></app-news-card>
+            <app-news-card
+              :newsHeader="newsCard2.title"
+              :newsBody="newsCard2.description"
+              :blogURL="newsCard2.blogPostURL"
+            ></app-news-card>
+            <app-news-card
+              :newsHeader="newsCard3.title"
+              :newsBody="newsCard3.description"
+              :blogURL="newsCard3.blogPostURL"
+            ></app-news-card>
+            <app-news-card
+              :newsHeader="newsCard1.title"
+              :newsBody="newsCard1.description"
+              :blogURL="newsCard1.blogPostURL"
+            ></app-news-card>
           </ul>
+          <!-- Column 2 -->
           <ul>
-            <li>
-              <h1>Mea Ludico</h1>Cetero perpetua ius at, et feugait nostrum sit, mea ne quaeque fastidii electram. Delenit
-              torquatos adipiscing vix ex. Viris tamquam postulant ei mel, ea singulis corrumpit democritum
-              vim. No fierent salutatus vel, in persecuti vituperata eos, at nusquam perpetua hendrerit est.
-              Ne pri odio option nusquam, sed natum admodum eleifend at. Sea putant malorum scripserit ut, ei
-              duo prima eleifend, ea mea agam diceret inciderint.
-            </li>
-
-            <li>
-              <h1>Impetus Accusata</h1>Vis omnium saperet ex. Wisi qualisque corrumpit eu vel, usu in vero inimicus mnesarchum. Eruditi
-              vivendum usu at, elaboraret inciderint pri cu. Ius enim zril ad, zril timeam consulatu ex cum.
-            </li>
-
-            <li>
-              <h1>Viderer Voluptua</h1>Vis omnium saperet ex. Wisi qualisque corrumpit eu vel, usu in vero inimicus mnesarchum. Eruditi
-              vivendum usu at, elaboraret inciderint pri cu. Ius enim zril ad, zril timeam consulatu ex cum.
-            </li>
+            <app-news-card
+              :newsHeader="newsCard2.title"
+              :newsBody="newsCard2.description"
+              :blogURL="newsCard2.blogPostURL"
+            ></app-news-card>
+            <app-news-card
+              :newsHeader="newsCard3.title"
+              :newsBody="newsCard3.description"
+              :blogURL="newsCard3.blogPostURL"
+            ></app-news-card>
+            <app-news-card
+              :newsHeader="newsCard1.title"
+              :newsBody="newsCard1.description"
+              :blogURL="newsCard1.blogPostURL"
+            ></app-news-card>
+            <app-news-card
+              :newsHeader="newsCard2.title"
+              :newsBody="newsCard2.description"
+              :blogURL="newsCard2.blogPostURL"
+            ></app-news-card>
           </ul>
+          <!-- Column 3 -->
           <ul>
-            <li>
-              <h1>Morbiso</h1>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies
-              in, diam. Sed arcu. Cras consequat.
-            </li>
-
-            <li>
-              <h1>Sumo Summo</h1>Ex nostrud verterem mea, duo no delicata neglegentur. Audire integre rationibus ut pri, ex cibo
-              oblique euismod sit, cibo iracundia vix at. Legimus torquatos definiebas an nec, mazim postulant
-              at sit. Ne qui quando vocent accusata, nam tritani fierent no. Ea per vocent voluptatibus.
-              Animal petentium patrioque id eos, et vis delenit reprimique. Vix clita essent expetenda et, duo
-              in soleat graeci complectitur. Sit lorem vitae iudicabit in, malorum discere ne ius. Est eu
-              adhuc blandit, ne copiosae placerat persequeris vim.
-            </li>
-
-            <li>
-              <h1>Parabou Tras</h1>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros
-              eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis
-              luctus, metus.
-            </li>
-
-            <li>
-              <h1>Vix Clita</h1>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-              deleniti atque corrupti quos dolores et aut officiis debitis aut rerum necessitatibus saepe
-              eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
-            </li>
+            <app-news-card
+              :newsHeader="newsCard1.title"
+              :newsBody="newsCard1.description"
+              :blogURL="newsCard1.blogPostURL"
+            ></app-news-card>
+            <app-news-card
+              :newsHeader="newsCard2.title"
+              :newsBody="newsCard2.description"
+              :blogURL="newsCard2.blogPostURL"
+            ></app-news-card>
+            <app-news-card
+              :newsHeader="newsCard2.title"
+              :newsBody="newsCard2.description"
+              :blogURL="newsCard2.blogPostURL"
+            ></app-news-card>
+            <app-news-card
+              :newsHeader="newsCard3.title"
+              :newsBody="newsCard3.description"
+              :blogURL="newsCard3.blogPostURL"
+            ></app-news-card>
           </ul>
         </div>
       </div>
@@ -90,8 +91,33 @@
 import NewsCard from "./components/NewsCard.vue";
 
 export default {
-  // data:function(){
-  // },
+  //This data will eventually be pulled in from the database
+  data: function() {
+    return {
+      // These are dummy data news cards
+      newsCard1: {
+        title: "Audire Integre",
+        description:
+          "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.",
+        blogPostURL:
+          "https://w3-connections.ibm.com/blogs/681bbedb-3892-4818-9961-38698c6ccde9/entry/Security_and_Privacy_for_Developers?lang=en_us"
+      },
+      newsCard2: {
+        title: "Morbiso",
+        description:
+          "Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.",
+        blogPostURL:
+          "https://w3-connections.ibm.com/blogs/925e2dd8-147c-4c30-a8a8-1339dd406ae9/entry/2019_F_SC_Hackathon_A_pouring_of_new_ideas_for_Financial_Systems?lang=en_us"
+      },
+      newsCard3: {
+        title: "Vix Clita",
+        description:
+          "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
+        blogPostURL:
+          "https://w3-connections.ibm.com/blogs/681bbedb-3892-4818-9961-38698c6ccde9/entry/Hortolandia_DoJo_Workshop_with_immediate_result?lang=en_us"
+      }
+    };
+  },
   components: {
     appNewsCard: NewsCard
   }
